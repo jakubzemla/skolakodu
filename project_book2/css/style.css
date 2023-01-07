@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.container {
+    width: 92%;
+    margin: 0 auto;
+}
+
+/*======== 1. HEADER ========*/
+header {
+    padding-top: 5em;
+    padding-bottom: 7.5em;
+}
+
+.hero {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image {
+    width: 50%;
+}
+
+.hero-image img {
+    padding-top: 5em;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.hero-text {
+    width: 50%;
+    color: #000;
+}
+
+.hero-text-headline {
+    font-size: 3em; /*48/16*/
+    font-weight: bold;
+    padding-bottom: 0.48em;
+}
+
+.hero-text-author {
+    font-size: 1.875em; /*30/16*/
+    display: block;
+    padding-bottom: 1.25em;
+}
+
+.hero-text-par {
+    font-size: 1.125em; /*18/16*/
+    padding-bottom: 1.8em;
+}
+
+.hero-text-price {
+    font-size: 3em;
+    display: block;
+    padding-bottom: 0.4em;
+}
+
+div.hero-text-btns {
+    display: flex;
+    align-items: end;
+}
+
+.hero-btn {
+    text-decoration: none;
+    font-size: 0.7em; 
+    padding: 1em 2.8em;
+    border-radius: 0.334em;
+}
+
+.hero-btn:first-child {
+    margin-right: 1.5em;
+}
+
+.hero-btn.action-scs {
+    font-size: 1.25em; /*20/16*/
+    background-color: #4572D7;
+    color: #fff;
+}
+
+.hero-btn.action-more {
+    border: 1px solid #4572D7;
+    color: #4572D7;
+    padding: 0.5em 1.8em;
+}
+
+
+
+/*======== 2. Section - Terms ========*/
+section.terms {
+    background-color: #F2F2F2;
+    padding: 5.625em 0;
+    color: #333;
+}
+
+.terms-headline {
+    font-size: 1.875em;
+    padding-bottom: 2.9em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.terms-items-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.terms-item {
+    width: 24%;
+}
+
+.terms-item i {
+    font-size: 3.25em; /*52/16*/
+    display: block;
+    padding-bottom: 0.25em;
+}
+
+.terms-item p {
+    font-size: 1.125em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+/*======== 3. Section - People ========*/
+section.people {
+    padding: 6em 0;
+}
+
+.people-headline {
+    font-size: 1.875em; /*30/16*/
+    padding-bottom: 1.6em;
+    text-align: center;
+    font-weight: 700;
+    color: #333;
+}
+
+.people-images-wrapper {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-block {
+    width: 23.5%;
+    margin-bottom: 2%;
+    max-height: 17.5em;
+}
+
+.image-block img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+
+/**********RESPONSIVE**********/
+
+@media (max-width: 1150px) {
+    .terms-item p {
+        font-size: 1em;
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 930px) {
+    header {
+        padding-top: 4em;
+        padding-bottom: 5em;
+    }
+
+    .hero {
+        width: 90%;
+    }
+
+    .hero-image img {
+        padding-top: 3em;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .hero-btn.action-scs {
+        font-size: 1em; /*20/16*/
+        background-color: #4572D7;
+        color: #fff;
+    }
+
+    section.terms {
+        padding: 4em 0 1em;
+    }
+
+    .terms-headline {
+        padding-bottom: 1.9em;
+    }
+
+    .terms-items-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .terms-item {
+        width: 48%;
+        padding-bottom: 3em;
+    }
+
+    .terms-item i {
+        font-size: 2.5em; /*40/16*/
+    }
+
+    .terms-item p {
+        width: 55%;
+    }
+
+    section.people {
+        padding: 3.7em 0;
+    }
+
+    .people-images-wrapper {
+        width: 60%;
+    }
+
+    .image-block {
+        width: 49%;
+        margin-bottom: 2%;
+        max-height: 11em;
+    }
+
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding-top: 2.8em;
+        padding-bottom: 4em;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+    }
+
+    .hero-text, .hero-image {
+        width: 100%
+    }
+
+
+    .hero-image img {
+        padding-top: 0em;
+        padding-bottom: 3em;
+        width: 60%;
+    }
+}
+
+@media (max-width: 580px) {
+    header {
+        text-align: center;
+        padding-bottom: 3em;
+    }
+
+    .hero-image img {
+        padding-top: 1em;
+        padding-bottom: 3em;
+        width: 70%;
+    }
+
+    div.hero-text-btns {
+        padding-top: 1.5em;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-btn:first-child {
+        margin-right: 0;
+        margin-bottom: 1.5em;
+    }
+
+    .terms-items-wrapper {
+        width: 95%;
+    }
+
+    .people-images-wrapper {
+        width: 95%;
+    }
+
+    .image-block {
+        width: 48.5%;
+        margin-bottom: 3%;
+        max-height: 12em;
+    }
+}
+
+    

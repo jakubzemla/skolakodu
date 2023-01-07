@@ -1,0 +1,473 @@
+@font-face {
+    font-family: 'HelveticaNormal';
+    src: url('../fonts/HelveticaNormal.eot');
+    src: local('0'), url('../fonts/HelveticaNormal.wof') format('woff'), 
+        url('../fonts/HelveticaNormal.ttf') format('truetype'), 
+        url('../fonts/HelveticaNormal.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaBold';
+    src: url('../fonts/HelveticaBold.eot');
+    src: local('0'), url('../fonts/HelveticaBold.wof') format('woff'), 
+        url('../fonts/HelveticaBold.ttf') format('truetype'), 
+        url('../fonts/HelveticaBold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'HelveticaNormal', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+/* =========== 1. HEADER ===============*/
+header.top-header {
+    padding-top: 4.625em; /*74/16*/
+    padding-bottom: 11.875em; /*190/16*/
+    background-color: #f4f5f7;
+}
+
+
+/* NAVIGATION BAR ================ */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10em;
+}
+
+span.logo {
+    font-size: 1.25em; /*20/16*/
+    color: #95989a;
+    font-family: 'HelveticaBold', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.socials {
+    display: flex;
+}
+.socials a {
+    color: #95989a;
+    text-decoration: none;
+    padding-right: 1.25em;
+}
+
+.socials a:last-child {
+    padding-right: 0;
+}
+
+.socials i {
+    font-size: 1.75em /*28/16*/;
+}
+
+
+/*HEADER-HERO =====================*/
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-text {
+    color: #32325f;
+    width: 50%;
+}
+
+.hero-img {
+    width: 50%;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
+.text-title {
+    font-size: 3em; /*48/16*/
+    font-family: 'HelveticaBold', sans-serif;
+    font-weight: 700;
+    padding-bottom: 0.521em; /*25/48*/
+}
+
+.text-sub-title, .text-par, .text-price-tag {
+    font-size: 1.25em; /*20/16*/
+    font-weight: 400;
+    padding-bottom: 0.8em; /*16/20*/
+}
+
+.text-sub-title, .text-price-tag, .text-price {
+    display: block;
+}
+
+.text-par {
+    line-height: 1.3em;
+}
+
+.text-price {
+    font-size: 3em; /*48/16*/
+    font-weight: 400;
+    padding-bottom: 1em; /*48/48*/
+}
+
+.hero-buttons-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.25em; /*20/16*/
+    font-family: 'HelveticaBold', sans-serif;
+    font-weight: 700;
+    padding: 1em 1.5em;
+    border-radius: 0.3em;
+    box-shadow: 0 0.15em 0.3em rgba(173, 173, 173, .9);
+}
+
+.hero-buttons a:first-child {
+    margin-right: 1.5em;
+}
+
+.action-scs {
+    background-color: #2dce89;
+}
+
+.action-more {
+    background-color: #5e72e4;
+}
+
+
+
+/* =========== 2. SECTION-ABOUT ===============*/
+section.about {
+    padding: 6.25em 0;
+    color: #32325f;
+}
+
+.about-subheadline {
+    font-size: 1.25em; /*20/16*/
+    font-weight: 400;
+    display: block;
+    padding-bottom: 0.8em; /*16/20*/
+}
+
+.about-headline {
+    font-size: 3em; /*48/16*/
+    font-family: 'HelveticaBold', sans-serif;
+    font-weight: 700;
+    padding-bottom: 2em;
+}
+
+.about-items-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-item {
+    width: 24%;
+}
+
+.about-item:last-child {
+    padding-right: 0;
+}
+
+.about-item i {
+    font-size: 4em;
+}
+
+.about-item p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.2;
+    padding-top: 2.5em;
+    color: #525f7f;
+}
+
+
+
+/* =========== 3. SECTION-PEOPLE ===============*/
+section.people {
+    background-color: #f4f5f7;
+    padding: 7em 0;
+    color: #32325f;
+}
+
+.people span {
+    display: block;
+    font-size: 1.25em; /*20/16*/
+    padding-bottom: 1.3em;
+}
+
+.people .people-headline {
+    font-size: 2.5em; /*40/16*/ 
+    font-family: 'HelveticaBold', sans-serif;
+    font-weight: 700;
+    padding-bottom: 1.6em;
+}
+
+.people-images {
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.img-wrap {
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+}
+
+.img-wrap:nth-child(3), .img-wrap:last-child {
+    margin-right: 0;
+}
+
+.img-wrap img {
+    width: 100%;
+    max-height: 255px;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========== 4. FOOTER ===============*/
+footer {
+    color: white;
+    font-family: 'HelveticaBold', sans-serif;
+    font-weight: 700;
+    background-color: #32325f;
+    padding: 5em 0 6.5em;
+}
+
+.footer-wrap {
+    display: flex;
+}
+
+.footer-item {
+    width: 33%;
+}
+
+.footer-item-headline {
+    font-size: 1.5em; /*24/16*/
+    padding-bottom: 1.45em;
+
+}
+
+.footer-item a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-item p, .footer-item a {
+    padding-bottom: 0.4em;
+}
+
+
+
+
+
+/*********************** RESPONSIVITY ***********************/
+
+@media (max-width: 950px) {
+    header.top-header {
+        padding-top: 1.5em;
+        padding-bottom: 5em;
+    }
+
+    .navbar {
+        padding-bottom: 5em;
+    }
+
+    .hero-buttons-btn {
+        font-size: 1em;
+        display: block;
+        width: 12em;
+        text-align: center;
+     }
+
+     .hero-buttons a:first-child {
+        margin-bottom: 0.8em;
+        margin-right: 0;
+     }
+
+     .text-title {
+        font-size: 2.4em; /*32/16*/
+    }
+
+    .text-price {
+        padding-bottom: 0.3em;
+    }
+}
+
+
+@media (max-width: 900px) {
+    section.about {
+        padding: 2em 0 1em;
+    }
+
+    .about-items-wrap {
+        flex-wrap: wrap;
+    }
+
+    .about-item {
+        width: 47%;
+        margin-bottom: 3em;
+    }
+
+    .about-item p {
+        padding-top: 1em;
+    }
+
+    .about-headline {
+        font-size: 2.5em;
+        padding-bottom: 1.5em;
+    }
+}
+
+@media (max-width: 750px) {
+    nav.navbar {
+        padding-bottom: 3em;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text, .hero-img {
+        width: 100%;
+    }
+
+    .hero-text {
+        order: 1;
+        padding-top: 3em;
+    }
+
+    .hero-img img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .text-price {
+        padding-bottom: 0.4em;
+    }
+
+    section.people {
+        padding: 3em 0;
+    }
+
+    .people span {
+        padding-bottom: 0.8em;
+    }
+
+    .people .people-headline {
+        font-size: 2.5em; /*40/16*/ 
+        font-family: 'HelveticaBold', sans-serif;
+        font-weight: 700;
+        padding-bottom: 0.8em;
+    }
+
+    .img-wrap {
+        width: 49%;
+        margin-right: 2%;
+    }
+
+    .img-wrap:nth-child(2n+0) {
+        margin-right: 0;
+    }
+
+    footer {
+        padding: 3.6em 0 2.4em;
+    }
+    
+    .footer-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer-item {
+        width: 48%;
+        padding-bottom: 3em;
+        font-weight: normal;
+    }
+    
+    .footer-item-headline {
+        padding-bottom: 0.7em;
+    }
+}
+
+
+@media (max-width: 580px) {
+    body {
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 100%;
+    }
+
+    .hero-buttons-btn {
+        margin: 0 auto;
+     }
+
+     .hero-buttons a:first-child {
+        margin: 0 auto 1em;
+    }
+
+    .hero-buttons a:last-child {
+        font-size: 0.7em;
+    }
+
+    .about-item {
+        width: 100%;
+        margin-bottom: 2em;
+        padding: 0.8em;
+    }
+
+    .about-item i {
+        display: block;
+        text-align: center;
+    }
+
+    .img-wrap {
+        width: 100%;
+        margin-right: 0;
+        padding: 2em;
+    }
+
+    footer {
+        padding: 3.6em 0 2.4em;
+    }
+    
+    .footer-wrap {
+        display: flex;
+        flex-wrap: no-wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-item {
+        width: 50%;
+    }
+    
+    .footer-item-headline {
+        text-decoration: underline;
+
+    }
+}
